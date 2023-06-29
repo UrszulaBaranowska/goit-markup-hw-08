@@ -1,0 +1,45 @@
+.our-team {
+  background-color: var(--second-white);
+  width: 100%;
+  margin: 0px;
+  align-items: center;
+  &__list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  &__worker {
+    text-align: center;
+    background-color: var(--main-white);
+    box-shadow: $our-team-card-shadow;
+    border-radius: 0px 0px 4px 4px;
+    width: 270px;
+    height: 428px;
+    &--name {
+      font-style: normal;
+      font-weight: 500;
+      font-size: $fontSizeBig;
+      line-height: 1.9;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--main-black);
+    }
+    &--position {
+      font-style: normal;
+      font-weight: 400;
+      font-size: $fontSizeBig;
+      line-height: 1.9;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--main-grey);
+      margin-bottom: 16px;
+    }
+  }
+  &__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+}

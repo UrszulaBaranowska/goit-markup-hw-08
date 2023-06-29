@@ -1,0 +1,18 @@
+body {
+  font-family: $primary-font;
+  color: var(--main-black);
+  font-size: $fontSizeNormal;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section-title {
+  color: var(--main-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}

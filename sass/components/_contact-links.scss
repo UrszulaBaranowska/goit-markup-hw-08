@@ -1,0 +1,13 @@
+.header__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  
+  &--color {
+    color: var(--main-grey);
+  }
+  &--icon {
+    fill: currentColor;
+  }
+}

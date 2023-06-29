@@ -1,0 +1,28 @@
+.our-clients {
+  height: 184px;
+  fill: var(--social-icons);
+  &__list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding-bottom: 94px;
+    &--logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 170px;
+      height: 92px;
+      border: 1px solid var(--social-icons);
+      border-radius: 4px;
+      margin-right: 30px;
+      cursor: pointer;
+      transition: $primary-transitions;
+    }
+    &--logo:hover,
+    &--logo:focus {
+      fill: var(--main-blue);
+      border-color: var(--main-blue);
+    }
+  }
+}

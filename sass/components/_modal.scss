@@ -1,0 +1,18 @@
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background-color: var(--main-white);
+}
+.close-button {
+  border: none;
+  background-color: var(--main-white);
+  position: relative;
+  top: 8px;
+  left: 92%;
+  cursor: pointer;
+}
