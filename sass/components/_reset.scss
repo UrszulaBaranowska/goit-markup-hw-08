@@ -14,11 +14,17 @@ a {
   margin: 0px;
 }
 section {
-  padding: 94px 0 94px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 ul,

@@ -15,8 +15,7 @@
   }
 }
 @mixin min-width {
-    @media screen and (min-width: 320px) {
-      overflow-x: auto;
-    }
+  @media screen and (min-width: 320px) {
+    overflow-x: auto;
   }
-  
+}
