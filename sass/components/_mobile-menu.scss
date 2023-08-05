@@ -1,0 +1,21 @@
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.button-hamburger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    fill: var(--main-blue);
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}

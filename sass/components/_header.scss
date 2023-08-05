@@ -1,5 +1,11 @@
 .header {
   border-bottom: var(--lines-color) solid 1px;
+  position: sticky;
+  background-color: var(--main-white);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
   &__container {
     display: flex;
     align-items: center;
