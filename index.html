@@ -57,6 +57,15 @@
             <span>+48 111 111 111</span></a
           >
         </div>
+        <button
+          class="header__menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="header__menu-toggle-icon" width="40" height="40">
+            <use href="./images/mobile-menu.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -549,6 +558,69 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__menu-toggle js-close-menu">
+        <svg class="mobile-menu__menu-toggle-icon" width="18.67" height="18.67">
+          <use href="./images/mobile-menu-close.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <menu class="mobile-nav">
+        <li>
+          <a
+            class="mobile-nav__link mobile-nav__link--accent"
+            href="index.html"
+            lang="pl"
+            >Agencja</a
+          >
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="portfolio.html" lang="pl"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="kontakt.html" lang="pl">Kontakt</a>
+        </li>
+      </menu>
+      <ul class="contact-mobile">
+        <li>
+          <a class="contact-mobile__telephon" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a class="contact-mobile__email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <ul class="socialmedia-mobile">
+            <li class="socialmedia-mobile__item">
+              <a class="socialmedia-mobile__link" href="">Instagram</a>
+            </li>
+            <li class="socialmedia-mobile__item">
+              <a class="socialmedia-mobile__link" href="">Twitter</a>
+            </li>
+            <li class="socialmedia-mobile__item">
+              <a class="socialmedia-mobile__link" href="">Facebook</a>
+            </li>
+            <li
+              class="socialmedia-mobile__item socialmedia-mobile__item--notborder"
+            >
+              <a class="socialmedia-mobile__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" data-modal-close>
