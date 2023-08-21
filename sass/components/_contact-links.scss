@@ -1,28 +1,13 @@
 .header__contact {
-  display: none;
-}
-
-@include tablet {
-  .header__contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  
+  &--color {
+    color: var(--main-grey);
   }
-}
-@include desktop {
-  .header__contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-
-    &--color {
-      color: var(--main-grey);
-    }
-    &--icon {
-      fill: currentColor;
-    }
+  &--icon {
+    fill: currentColor;
   }
 }

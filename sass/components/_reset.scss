@@ -14,19 +14,11 @@ a {
   margin: 0px;
 }
 section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  @include desktop {
-    section {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
-  }
+  padding: 94px 0 94px 0;
 }
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 ul,
