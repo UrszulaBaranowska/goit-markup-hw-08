@@ -1,5 +1,6 @@
-@import "./components/reset";
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./components/reset";
 @import "./components/global-styles";
 @import "./components/header";
 @import "./components/logostyle";
@@ -9,10 +10,10 @@
 @import "./components/strenghts";
 @import "./components/services";
 @import "./components/our-team";
-@import "./components/footer";
 @import "./components/our-clients";
 @import "./components/social-icons";
 @import "./components/newsletter";
+@import "./components/footer";
 @import "./utils/backdrop";
 @import "./utils/hidden";
 @import "./components/modal";

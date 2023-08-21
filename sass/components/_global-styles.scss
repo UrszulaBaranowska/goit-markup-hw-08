@@ -4,9 +4,19 @@ body {
   font-size: $fontSizeNormal;
 }
 .container {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 480px;
   margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 }
+
 .section-title {
   color: var(--main-black);
   font-weight: 700;
