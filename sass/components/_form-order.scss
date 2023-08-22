@@ -1,7 +1,14 @@
 .form {
   position: relative;
-  width: 528px;
-  margin: 0 auto;
+  min-height: 609px;
+  min-width: 320px;
+  text-align: center;
+  background-color: getColor("accentLight");
+  cursor: auto;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
   &__title {
     font-size: 20px;
     line-height: 1.15;
@@ -180,5 +187,14 @@
   &__button:focus {
     background-color: var(--second-white);
     color: var(--main-blue);
+  }
+}
+@include tablet {
+}
+@include desktop {
+  .form {
+    position: relative;
+    width: 528px;
+    margin: 0 auto;
   }
 }

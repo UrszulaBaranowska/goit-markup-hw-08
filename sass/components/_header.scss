@@ -1,7 +1,6 @@
 .header {
   border-bottom: var(--lines-color) solid 1px;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  height: 60px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -28,11 +27,12 @@
 }
 @include tablet {
   .header {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    height: 80px;
     &__logo {
       margin-right: 83px;
       margin-left: 15px;
+      padding-top: 26px;
+      padding-bottom: 26px;
     }
     &__menu-toggle {
       display: none;
@@ -40,10 +40,15 @@
   }
 }
 @include desktop {
-  .header__logo {
-    margin-right: 93px;
-  }
-  .header__menu-toggle {
-    display: none;
+  .header {
+    height: 80px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    &__logo {
+      margin-right: 93px;
+    }
+    &__menu-toggle {
+      display: none;
+    }
   }
 }

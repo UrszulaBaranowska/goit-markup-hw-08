@@ -29,8 +29,11 @@ img {
   height: auto;
 }
 ul,
-li {
-  list-style-type: none;
+li,
+menu {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 a {

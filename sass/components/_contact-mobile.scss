@@ -1,7 +1,7 @@
 .contact-mobile {
   margin-top: auto;
   &__phone {
-    color: var(--main-grey);
+    color: var(--main-blue);
     font-weight: 500;
     font-size: 34px;
     letter-spacing: 0.02em;
@@ -17,6 +17,7 @@
   &__email {
     @extend .contact-mobile__phone;
     font-size: 24px;
+    color: var(--main-grey);
     margin-bottom: 64px;
   }
 }

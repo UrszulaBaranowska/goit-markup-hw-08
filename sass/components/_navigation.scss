@@ -7,7 +7,7 @@
     justify-content: space-between;
     width: 245px;
     &--active {
-      color: var(--main-black);
+      color: var(--main-blue);
       text-decoration: none;
       font-size: $fontSizeNormal;
       font-weight: 500;
@@ -25,7 +25,7 @@
       height: 4px;
       background-color: var(--main-blue);
       border-radius: 2px;
-      bottom: -28px;
+      bottom: -32px;
       position: absolute;
     }
     &--links {
@@ -51,9 +51,8 @@
     max-width: 245px;
     margin-left: 47px;
     margin-right: 345px;
-
     &--active {
-      color: var(--main-black);
+      color: var(--main-blue);
       text-decoration: none;
       font-size: $fontSizeNormal;
       font-weight: 500;
@@ -75,7 +74,7 @@
       height: 4px;
       background-color: var(--main-blue);
       border-radius: 2px;
-      bottom: -28px;
+      bottom: -32px;
       position: absolute;
     }
     &--links {
