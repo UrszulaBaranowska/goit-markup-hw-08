@@ -176,10 +176,16 @@
             <li class="our-team__worker">
               <figure>
                 <img
-                  src="images/photo1.jpg"
+                  src="./images/our-team1mob@1x.jpg 450w"
                   alt="Product Designer - male, brunet with glasses"
-                  width="270"
-                  height="260"
+                  srcset="
+                    images/our-team1mob@2x.jpg  900w,
+                    images/our-team1tab@1x.jpg  354w,
+                    images/our-team1tab@2x.jpg  708w,
+                    images/our-team1desk@1x.jpg 270w,
+                    images/our-team1des@2x.jpg  540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <figcaption class="our-team__info">
                   <h4 class="our-team__worker--name">John Doe</h4>
@@ -236,10 +242,16 @@
             <li class="our-team__worker">
               <figure>
                 <img
-                  src="images/photo2.jpg"
+                  src="./images/our-team2mob@1x.jpg 450w"
                   alt="Frontend Developer - female, blonde with glasses"
-                  width="270"
-                  height="260"
+                  srcset="
+                    images/our-team2mob@2x.jpg  900w,
+                    images/our-team2tab@1x.jpg  354w,
+                    images/our-team2tab@2x.jpg  708w,
+                    images/our-team2desk@1x.jpg 270w,
+                    images/our-team2des@2x.jpg  540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <figcaption class="our-team__info">
                   <h4 class="our-team__worker--name">John Doe</h4>
@@ -296,10 +308,16 @@
             <li class="our-team__worker">
               <figure>
                 <img
-                  src="images/photo3.jpg"
+                  src="./images/our-team3mob@1x.jpg 450w"
                   alt="Marketing - male, blonde"
-                  width="270"
-                  height="260"
+                  srcset="
+                    images/our-team3mob@2x.jpg  900w,
+                    images/our-team3tab@1x.jpg  354w,
+                    images/our-team3tab@2x.jpg  708w,
+                    images/our-team3desk@1x.jpg 270w,
+                    images/our-team3des@2x.jpg  540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <figcaption class="our-team__info">
                   <h4 class="our-team__worker--name">John Doe</h4>
@@ -356,10 +374,16 @@
             <li class="our-team__worker">
               <figure>
                 <img
-                  src="images/photo4.jpg"
+                  src="./images/our-team4mob@1x.jpg 450w"
                   alt="UI Designer - male,brunet with glasses"
-                  width="270"
-                  height="260"
+                  srcset="
+                    images/our-team4mob@2x.jpg  900w,
+                    images/our-team4tab@1x.jpg  354w,
+                    images/our-team4tab@2x.jpg  708w,
+                    images/our-team4desk@1x.jpg 270w,
+                    images/our-team4des@2x.jpg  540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <figcaption class="our-team__info">
                   <h4 class="our-team__worker--name">John Doe</h4>
@@ -560,11 +584,7 @@
     </footer>
     <div class="mobil-menu js-menu-container" id="mobile-menu">
       <button class="mobil-menu__menu-toggle js-close-menu">
-        <svg
-          class="mobil-menu__menu-toggle--icon"
-          width="18.67"
-          height="18.67"
-        >
+        <svg class="mobil-menu__menu-toggle--icon" width="18.67" height="18.67">
           <use href="./images/mobile-menu-close.svg#icon-close_40px"></use>
         </svg>
       </button>
