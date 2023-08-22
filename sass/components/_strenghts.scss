@@ -1,14 +1,10 @@
 .strenghts {
   background-color: var(--main-white);
-  padding-bottom: 0px;
-  margin: 0px;
-  justify-content: space-between;
-  gap: 30px;
+  padding-bottom: 45px;
+  margin: 0 15px;
   &__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+    flex-direction: column;
     gap: 30px;
     &--title {
       color: var(--main-black);
@@ -16,12 +12,14 @@
       font-weight: 700;
       line-height: 1;
       letter-spacing: 0.03em;
-      text-transform: uppercase;
       margin-bottom: 10px;
       margin-top: 30px;
+      margin-left: 105px;
+      margin-right: 105px;
+      text-align: center;
     }
     &--icons {
-      width: 270px;
+      width: 450px;
       height: 120px;
       background-color: var(--second-white);
       display: flex;
@@ -36,9 +34,54 @@
     &--text {
       color: var(--main-grey);
       line-height: 1.71;
-      width: 270px;
-      height: 75px;
+      width: 450px;
+      height: 50px;
       letter-spacing: 0.03em;
+    }
+  }
+}
+@include tablet {
+  .strenghts {
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      &--title {
+        margin-left: 0px;
+        text-align: left;
+      }
+      &--icons {
+        width: 354px;
+        height: 120px;
+      }
+      &--text {
+        width: 354px;
+        height: 75px;
+      }
+    }
+  }
+}
+@include desktop {
+  .strenghts {
+    margin: 0px;
+    justify-content: space-between;
+    &__list {
+      justify-content: center;
+      list-style: none;
+      flex-direction: row;
+      &--title {
+        margin-left: 0px;
+        text-align: left;
+      }
+      &--icons {
+        width: 270px;
+        height: 120px;
+      }
+      &--text {
+        width: 270px;
+        height: 75px;
+      }
     }
   }
 }
