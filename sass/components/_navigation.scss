@@ -40,6 +40,10 @@
       position: relative;
       transition: $primary-transitions;
     }
+    &--links:hover,
+    &--links:focus {
+      color: var(--main-blue);
+    }
   }
 }
 @include desktop {

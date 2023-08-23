@@ -97,8 +97,9 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     height: 252px;
-    padding: 60px 0;
+    padding-top: 0;
     text-align: start;
+    align-items: baseline;
     &__social {
       margin-left: 70px;
       margin-top: 0;

@@ -10,11 +10,10 @@
   padding-left: 40px;
   padding-top: 48px;
   padding-bottom: 48px;
-  background-color: white;
+  background-color: var(--main-white);
   transform: translateX(100%);
   transition: $primary-transitions;
   text-decoration: none;
-  margin-right: 15px;
   visibility: hidden;
   &__menu-toggle {
     position: absolute;

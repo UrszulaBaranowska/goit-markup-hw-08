@@ -1,20 +1,21 @@
 .form {
   position: relative;
-  min-height: 609px;
-  min-width: 350px;
+  max-width: 450px;
+  max-height: 609px;
   text-align: center;
   background-color: var(--main-white);
   cursor: auto;
   margin: auto;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 40px;
 
   &__title {
+    width: 370px;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
+    margin-left: 40px;
+    margin-top: 2px;
     text-align: center;
   }
   &__username {
@@ -115,6 +116,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 120px;
+    width: 370px;
     padding-left: 16px;
     padding-top: 12px;
     font-size: 12px;
@@ -125,11 +127,11 @@
   &__acceptance-label {
     display: flex;
     font-weight: 400;
-    font-size: $fontSizeNormal;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--main-grey);
-    margin-left: 55px;
+    margin-left: 40px;
     align-items: center;
     position: relative;
     margin-top: 20px;
@@ -203,11 +205,81 @@
 @include desktop {
   .form {
     position: relative;
-    min-width: 528px;
-    min-height: 581px;
-    margin: 0 auto;
-    &__button {
+    height: 528px;
+    width: 581px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 40px;
+    &__title {
+      width: 448px;
       margin-left: 0;
+    }
+    &__username {
+      width: 448px;
+      margin: 0 auto;
+    }
+    &__phone-number {
+      width: 448px;
+      margin: 0 auto;
+    }
+    &__email-addres {
+      width: 448px;
+      margin: 0 auto;
+    }
+    &__label-order {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+      color: var(--main-grey);
+      margin-bottom: 10px;
+    }
+    &__input-order {
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      padding-bottom: 5px;
+      padding-left: 42px;
+      padding-top: 12px;
+      font-size: $fontSizeBig;
+      line-height: 1;
+      transition: border $primary-transitions;
+    }
+    &__opinion-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+      color: var(--main-grey);
+      margin-bottom: 10px;
+      width: 448px;
+      margin: 0 auto;
+    }
+    &__opinion-textarea {
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      height: 120px;
+      width: 448px;
+      padding-left: 16px;
+      padding-top: 12px;
+      font-size: 12px;
+      line-height: 1.2;
+      color: rgba(117, 117, 117, 0.5);
+      transition: border $primary-transitions;
+    }
+    &__acceptance-label {
+      font-size: $fontSizeNormal;
+      margin-left: 8px;
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      &--text {
+        margin-left: 8px;
+      }
     }
   }
 }
