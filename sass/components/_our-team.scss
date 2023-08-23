@@ -1,10 +1,11 @@
 .our-team {
   background-color: var(--second-white);
-  width: 100%;
+  max-width: 100%;
   margin: 0px;
   align-items: center;
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
     justify-content: center;
     align-items: center;
@@ -15,8 +16,8 @@
     background-color: var(--main-white);
     box-shadow: $our-team-card-shadow;
     border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    height: 428px;
+    width: 450px;
+    height: 622px;
     &--name {
       font-style: normal;
       font-weight: 500;
@@ -41,5 +42,30 @@
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+  }
+}
+@include tablet {
+  .our-team {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    &__worker {
+      width: 354px;
+      height: 536px;
+    }
+  }
+}
+@include desktop {
+  .our-team {
+    &__list {
+      display: flex;
+      flex-direction: row;
+    }
+    &__worker {
+      width: 270px;
+      height: 428px;
+    }
   }
 }
