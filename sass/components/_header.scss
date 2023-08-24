@@ -1,7 +1,6 @@
 .header {
   border-bottom: var(--lines-color) solid 1px;
   background-color: #fff;
-  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -34,7 +33,8 @@
 }
 @include tablet {
   .header {
-    position: absolute;
+    osition: absolute;
+    z-index: 0;
     &__container {
       height: 80px;
     }
@@ -52,6 +52,7 @@
 @include desktop {
   .header {
     position: absolute;
+    z-index: 0;
     &__container {
       height: 80px;
     }

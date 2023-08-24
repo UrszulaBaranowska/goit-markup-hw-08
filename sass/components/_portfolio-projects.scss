@@ -4,9 +4,7 @@
   align-items: center;
   max-width: 100%;
   justify-content: center;
-  margin-left: 0;
   list-style: none;
-
   &__item:hover {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
@@ -36,7 +34,6 @@
     transform: translateX(0);
   }
   &__item {
-    margin: 0 auto;
     transition: $primary-transitions;
   }
 
@@ -49,7 +46,6 @@
   &__card {
     position: relative;
     width: 100%;
-    height: 294px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -77,8 +73,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: flex-start;
+    &__item {
+      display: flexbox;
+    }
   }
 }
+
 @include desktop {
   .portfolio-projects {
     display: flex;
@@ -86,10 +87,13 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 0;
+    margin-left: 15px;
     gap: 30px;
     &__item {
       margin: 0;
+    }
+    &__overlay {
+      padding: 77px 24px 77px 24px;
     }
   }
 }
