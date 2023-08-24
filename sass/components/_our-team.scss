@@ -1,7 +1,7 @@
 .our-team {
   background-color: var(--second-white);
   max-width: 100%;
-  margin: 0px;
+  margin: 0 15px;
   align-items: center;
   &__list {
     display: flex;
@@ -16,8 +16,7 @@
     background-color: var(--main-white);
     box-shadow: $our-team-card-shadow;
     border-radius: 0px 0px 4px 4px;
-    width: 450px;
-    height: 622px;
+    height: auto;
     &--name {
       font-style: normal;
       font-weight: 500;

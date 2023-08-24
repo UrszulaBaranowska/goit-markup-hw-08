@@ -1,10 +1,17 @@
 .header {
   border-bottom: var(--lines-color) solid 1px;
-  height: 60px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
+    margin-bottom: 0;
   }
   &__logo {
     margin-left: 15px;
@@ -27,7 +34,9 @@
 }
 @include tablet {
   .header {
-    height: 80px;
+    &__container {
+      height: 80px;
+    }
     &__logo {
       margin-right: 83px;
       margin-left: 15px;
@@ -41,9 +50,10 @@
 }
 @include desktop {
   .header {
-    height: 80px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    position: absolute;
+    &__container {
+      height: 80px;
+    }
     &__logo {
       margin-right: 93px;
     }
