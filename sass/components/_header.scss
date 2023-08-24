@@ -34,6 +34,7 @@
 }
 @include tablet {
   .header {
+    position: absolute;
     &__container {
       height: 80px;
     }
