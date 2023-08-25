@@ -14,9 +14,9 @@
     &:focus {
       color: var(--main-blue);
     }
-    &--accent {
-      position: relative;
+    &--active {
       color: var(--main-blue);
+      text-decoration: none;
     }
   }
 }
